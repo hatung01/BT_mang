@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập luyện tập mảng 1</title>
+</head>
+<body>
+<script>
+    // let mang = [];
+    // let n = +prompt("Nhập số phần tử của mảng: ");
+    // for (let i = 0; i < n; i++) {
+    //     mang.push(+prompt("Nhập phần tử thứ "+ i + ":"));
+    // }
+    // document.write("[ " + mang + "]<br>");
+
+    //Bài 1
+        // let count = 0;
+        // for (let i = 0; i < mang.length; i++) {
+        //     if (mang[i] >= 10){
+        //         count ++;
+        //         document.write("Số nguyên lớn hơn hoặc bằng 10 là số " + mang[i] + " ở vị trí " + i + " trong mảng.<br>");
+        //     }
+        // }
+        // document.write("Vậy tổng có " + count + " phần tử lớn hơn hoặc bằng 10.");
+
+    //Bài 2
+        // let max = mang[0];
+        // let vt = 0;
+        // for (let i = 0; i < mang.length; i++) {
+        //     if (mang[i] > max){
+        //         max = mang[i];
+        //         vt = i;
+        //     }
+        // }
+        // document.write("Phần tử có giá trị lớn nhất là " + max + " nằm ở vị trí thứ " + vt);
+
+    //Bài 3
+        // let max = mang[0];
+        // let sum = 0;
+        // for (let i = 0; i < mang.length; i++) {
+        //     sum += mang[i];
+        // }
+        // document.write("Trung bình các phần tử trong mảng là: " + (sum/mang.length) + "<br>");
+        // for (let i = 0; i < mang.length; i++) {
+        //     if (mang[i] > max){
+        //         max = mang[i];
+        //     }
+        // }
+        // document.write("Phần tử có giá trị lớn nhất là " + max +"<br>");
+
+    //Bài 4
+        // let mang = [1, 2, 3, 4, 5];
+        // let start = 0;
+        // let end = mang.length - 1;
+        // while (start < end) {
+        //     let ss = mang[start];
+        //     mang[start] = mang[end];
+        //     mang[end] = ss;
+        //     start++;
+        //     end--;
+        // }
+        // document.write(mang);
+
+    //Bài 5
+        // let count = 0;
+        // for (let i = 0; i < mang.length; i++) {
+        //     if (mang[i] < 0){
+        //         count++;
+        //     }
+        // }
+        // document.write("Tất cả có " + count + " số nguyên dương.");
+
+    //Bài 6 7
+    //     let v = +prompt("Nhập số nguyên V: ");
+    //     let kt = false;
+    //     for (let i = 0; i < mang.length; i++) {
+    //         if(v === mang[i]) {
+    //             kt = true;
+    //             mang.splice(i, 1);
+    //             break;
+    //         }
+    //     }
+    //     if (kt === true){
+    //         document.write("V is in the array");
+    //     }else if (kt === false){
+    //         document.write("V is not in the array");
+    //     }
+    //     document.write("[ " + mang + "]<br>");
+
+    //Bài 8
+        // for (let i = 0; i < mang.length ; i++) {
+        //     for (let j = 0; j < mang.length - i; j++) {
+        //         if (mang[j] < mang[j + 1]) {
+        //             let temp = mang[j];
+        //             mang[j] = mang[j + 1];
+        //             mang[j + 1] = temp;
+        //         }
+        //     }
+        // }
+        // document.write("[ " + mang + "]<br>");
+
+    //Bài 9
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < 10; i++) {
+        a.push(+prompt("Nhập phần tử thứ "+ i + ":"));
+    }
+    document.write("[ " + a + "]<br>");
+    for (let i = 0; i < 10; i++) {
+        b.push(+prompt("Nhập phần tử thứ "+ i + ":"));
+    }
+    document.write("[ " + b + "]<br>");
+    c = a + b;
+    document.write("[ " + c + "]<br>");
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
